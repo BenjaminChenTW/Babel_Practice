@@ -1,0 +1,823 @@
+[
+  {
+    "圖片檔名": "artist_1",
+    "label": "金牌獎 Gold Prize",
+    "name": "小花春夫 Dan OBANA",
+    "藝術家簡介": "（若要新增則繼續往下建立欄位）"
+  },
+  {
+    "圖片檔名": "artist_2",
+    "label": "銀牌獎 Silver Prize ",
+    "name": "亨利克・克羅利科夫斯基 Henryk KROLIKOWSKI"
+  },
+  {
+    "圖片檔名": "artist_3",
+    "label": "銅牌獎Bronze Prize",
+    "name": "李迪權 LEE Tek-Khean"
+  },
+  {
+    "圖片檔名": "artist_4",
+    "label": "評審團特別獎 Special Jury Prize",
+    "name": "玉分昭光 Akimitsu TAMAWAKE"
+  },
+  {
+    "圖片檔名": "artist_5",
+    "label": "評審團特別獎 Special Jury Prize",
+    "name": "齊山努波・浦雷弗拉齊庫 Chisanuphol PRESANVORAKITKOOL"
+  },
+  {
+    "圖片檔名": "artist_6",
+    "label": "優選獎 Merit Prize",
+    "name": "奧倫多・馬第尼斯・維斯加 Orlando MARTINEZ VESGA"
+  },
+  {
+    "圖片檔名": "artist_7",
+    "label": "優選獎 Merit Prize",
+    "name": "安納特・孔韋勒 Amnat KONGWAREE"
+  },
+  {
+    "圖片檔名": "artist_8",
+    "label": "優選獎 Merit Prize",
+    "name": "金炫辰 KIM Hyun-Jin"
+  },
+  {
+    "圖片檔名": "artist_9",
+    "label": "優選獎 Merit Prize",
+    "name": "王亭喧 WANG Ting-Shiuan"
+  },
+  {
+    "圖片檔名": "artist_10",
+    "label": "優選獎 Merit Prize",
+    "name": "金圖・莫漢・卡利塔 Jintu Mohan KALITA"
+  },
+  {
+    "圖片檔名": "artist_11",
+    "label": "佳作 Honorable Mention",
+    "name": "拉斐爾・吉爾 Rafael GIL"
+  },
+  {
+    "圖片檔名": "artist_12",
+    "label": "佳作 Honorable Mention",
+    "name": "迪米特里耶・佩奇克 Dimitrije PECIĆ"
+  },
+  {
+    "圖片檔名": "artist_13",
+    "label": "佳作 Honorable Mention",
+    "name": "戴飴霏 TAI Yi-Fei"
+  },
+  {
+    "圖片檔名": "artist_14",
+    "label": "佳作 Honorable Mention",
+    "name": "瓦里莎拉・亞皮桑賓翁 Warisara APISAMPINWONG"
+  },
+  {
+    "圖片檔名": "artist_15",
+    "label": "佳作 Honorable Mention",
+    "name": "今泉奏 So IMAIZUMI"
+  },
+  {
+    "圖片檔名": "artist_16",
+    "label": "入選 Seleted",
+    "name": "黛博拉・查普曼 Deborah CHAPMAN"
+  },
+  {
+    "圖片檔名": "artist_17",
+    "label": "入選 Seleted",
+    "name": "費南多・哈維爾・波利多 Fernando Javier POLITO"
+  },
+  {
+    "圖片檔名": "artist_18",
+    "label": "入選 Seleted",
+    "name": "大衛・弗雷瑟 David FRAZER"
+  },
+  {
+    "圖片檔名": "artist_19",
+    "label": "入選 Seleted",
+    "name": "魯・漢克斯 Rew HANKS"
+  },
+  {
+    "圖片檔名": "artist_20",
+    "label": "入選 Seleted",
+    "name": "卡魯札曼 Kamruzzaman"
+  },
+  {
+    "圖片檔名": "artist_21",
+    "label": "入選 Seleted",
+    "name": "穆罕默德・拉弗奎・伊斯蘭 Md. Rafiqul ISLAM"
+  },
+  {
+    "圖片檔名": "artist_22",
+    "label": "入選 Seleted",
+    "name": "洛克亞・索塔納 Rokeya SULTANA"
+  },
+  {
+    "圖片檔名": "artist_23",
+    "label": "入選 Seleted",
+    "name": "阿尼蘇扎曼・阿尼斯 Anisuzzaman ANIS"
+  },
+  {
+    "圖片檔名": "artist_24",
+    "label": "入選 Seleted",
+    "name": "米里亞娜・普雷拉多维契 Mirjana PRERADOVIC"
+  },
+  {
+    "圖片檔名": "artist_25",
+    "label": "入選 Seleted",
+    "name": "阿德米爾・格尼克 Admir GANIC"
+  },
+  {
+    "圖片檔名": "artist_26",
+    "label": "入選 Seleted",
+    "name": "盧米亞娜・卡拉斯塔莫瓦 Rumyana KARASTAMOVA"
+  },
+  {
+    "圖片檔名": "artist_27",
+    "label": "入選 Seleted",
+    "name": "雷吉娜・達卡拉切娃 Regina DALKALACHEVA"
+  },
+  {
+    "圖片檔名": "artist_28",
+    "label": "入選 Seleted",
+    "name": "柏楊・菲爾切夫 Bouyan FILCHEV"
+  },
+  {
+    "圖片檔名": "artist_29",
+    "label": "入選 Seleted",
+    "name": "德西斯拉娃・赫里斯托娃 Desislava HRISTOVA"
+  },
+  {
+    "圖片檔名": "artist_30",
+    "label": "入選 Seleted",
+    "name": "迪莫・米蘭諾夫 Dimo MILANOV"
+  },
+  {
+    "圖片檔名": "artist_31",
+    "label": "入選 Seleted",
+    "name": "艾娃・丹科娃 Iva DANKOVA"
+  },
+  {
+    "圖片檔名": "artist_32",
+    "label": "入選 Seleted",
+    "name": "瓦西爾・科列夫 Vasil KOLEV"
+  },
+  {
+    "圖片檔名": "artist_33",
+    "label": "入選 Seleted",
+    "name": "伊莉莎白・英格朗姆 Elizabeth INGRAM"
+  },
+  {
+    "圖片檔名": "artist_34",
+    "label": "入選 Seleted",
+    "name": "亞加塔・德達 Agata DERDA"
+  },
+  {
+    "圖片檔名": "artist_35",
+    "label": "入選 Seleted",
+    "name": "華特・朱力 Walter JULE"
+  },
+  {
+    "圖片檔名": "artist_36",
+    "label": "入選 Seleted",
+    "name": "張凌瑞 ZHANG Ling-Rui"
+  },
+  {
+    "圖片檔名": "artist_37",
+    "label": "入選 Seleted",
+    "name": "高偉 GAO Wei"
+  },
+  {
+    "圖片檔名": "artist_38",
+    "label": "入選 Seleted",
+    "name": "陳彥龍 CHEN Yan-Long"
+  },
+  {
+    "圖片檔名": "artist_39",
+    "label": "入選 Seleted",
+    "name": "牟樹輝 MU Shu-Hui"
+  },
+  {
+    "圖片檔名": "artist_40",
+    "label": "入選 Seleted",
+    "name": "于麗燕 YU Li-Yan"
+  },
+  {
+    "圖片檔名": "artist_41",
+    "label": "入選 Seleted",
+    "name": "蔡醒善 CAI Xing-Shan"
+  },
+  {
+    "圖片檔名": "artist_42",
+    "label": "入選 Seleted",
+    "name": "何乃慶 HE Nai-Qing"
+  },
+  {
+    "圖片檔名": "artist_43",
+    "label": "入選 Seleted",
+    "name": "方小龍 FANG Xiao-Long Paul"
+  },
+  {
+    "圖片檔名": "artist_44",
+    "label": "入選 Seleted",
+    "name": "陳行曄 CHEN Xing-Ye"
+  },
+  {
+    "圖片檔名": "artist_45",
+    "label": "入選 Seleted",
+    "name": "尤貝爾・雅比・米洛・達查 Yober Arbey MELO DAZA"
+  },
+  {
+    "圖片檔名": "artist_46",
+    "label": "入選 Seleted",
+    "name": "安娜・維沃達 Ana VIVODA"
+  },
+  {
+    "圖片檔名": "artist_47",
+    "label": "入選 Seleted",
+    "name": "莉亞・加萊蒂 Lia GALLETTI"
+  },
+  {
+    "圖片檔名": "artist_48",
+    "label": "入選 Seleted",
+    "name": "維克多・哥梅茲 Victor GOMEZ"
+  },
+  {
+    "圖片檔名": "artist_49",
+    "label": "入選 Seleted",
+    "name": "安涅梅德林・卡扎蒂拉 Anyelmaidelin CALZADILLA"
+  },
+  {
+    "圖片檔名": "artist_50",
+    "label": "入選 Seleted",
+    "name": "蘭卡・威廉莫娃 Lenka VILHELMOVA"
+  },
+  {
+    "圖片檔名": "artist_51",
+    "label": "入選 Seleted",
+    "name": "安德里亞・丹妮拉・拉瑞阿・索洛爾薩諾 Andrea Daniela LARREA SOLORZANO"
+  },
+  {
+    "圖片檔名": "artist_52",
+    "label": "入選 Seleted",
+    "name": "卡利・卡爾德 Kalli KALDE"
+  },
+  {
+    "圖片檔名": "artist_53",
+    "label": "入選 Seleted",
+    "name": "瑪麗亞・維洛斯 Maria VIIRROS"
+  },
+  {
+    "圖片檔名": "artist_54",
+    "label": "入選 Seleted",
+    "name": "皮耶・馬特薩斯 Pierre MATSAS"
+  },
+  {
+    "圖片檔名": "artist_55",
+    "label": "入選 Seleted",
+    "name": "斯泰羅拉・卡普薩利 Stavroula KAPSALI"
+  },
+  {
+    "圖片檔名": "artist_56",
+    "label": "入選 Seleted",
+    "name": "維納・庫瑪 Vinay KUMAR"
+  },
+  {
+    "圖片檔名": "artist_57",
+    "label": "入選 Seleted",
+    "name": "沙尤尼・恰克拉伯提 Sayani CHAKRABORTY"
+  },
+  {
+    "圖片檔名": "artist_58",
+    "label": "入選 Seleted",
+    "name": "阿納米特拉・達斯 Anamitra DAS"
+  },
+  {
+    "圖片檔名": "artist_59",
+    "label": "入選 Seleted",
+    "name": "山齊・庫瑪 SANJAY KUMAR"
+  },
+  {
+    "圖片檔名": "artist_60",
+    "label": "入選 Seleted",
+    "name": "薩加・康達瓦 Sagar KONDAVAL"
+  },
+  {
+    "圖片檔名": "artist_61",
+    "label": "入選 Seleted",
+    "name": "努坦・帝曼 Nutan DHIMAN"
+  },
+  {
+    "圖片檔名": "artist_62",
+    "label": "入選 Seleted",
+    "name": "嘉揚特・加耶拉 Jayant GAJERA"
+  },
+  {
+    "圖片檔名": "artist_63",
+    "label": "入選 Seleted",
+    "name": "皮勇・塔魯達 Priyoum TALUKDAR"
+  },
+  {
+    "圖片檔名": "artist_64",
+    "label": "入選 Seleted",
+    "name": "蒂娜・伯格丹諾維奇 Tina BOGDANOVSKY"
+  },
+  {
+    "圖片檔名": "artist_65",
+    "label": "入選 Seleted",
+    "name": "芙蘭且絲卡・馬可林 Francesca MARCOLIN"
+  },
+  {
+    "圖片檔名": "artist_66",
+    "label": "入選 Seleted",
+    "name": "莎瑞娜・帕格尼尼 Serena PAGNINI"
+  },
+  {
+    "圖片檔名": "artist_67",
+    "label": "入選 Seleted",
+    "name": "澤田祐一 Yuichi SAWADA"
+  },
+  {
+    "圖片檔名": "artist_68",
+    "label": "入選 Seleted",
+    "name": "廣江嘉郎 Yoshiro HIROE"
+  },
+  {
+    "圖片檔名": "artist_69",
+    "label": "入選 Seleted",
+    "name": "田島直樹 Naoki TAJIMA"
+  },
+  {
+    "圖片檔名": "artist_70",
+    "label": "入選 Seleted",
+    "name": "平塚雄二 Yuji HIRATSUKA"
+  },
+  {
+    "圖片檔名": "artist_71",
+    "label": "入選 Seleted",
+    "name": "大久保春霞 Shunka OKUBO"
+  },
+  {
+    "圖片檔名": "artist_72",
+    "label": "入選 Seleted",
+    "name": "堂東由佳 Yuka DOUTOU"
+  },
+  {
+    "圖片檔名": "artist_73",
+    "label": "入選 Seleted",
+    "name": "永幡民子 Tamiko NAGAHATA"
+  },
+  {
+    "圖片檔名": "artist_74",
+    "label": "入選 Seleted",
+    "name": "加藤貴義 Takayoshi KATO"
+  },
+  {
+    "圖片檔名": "artist_75",
+    "label": "入選 Seleted",
+    "name": "恩立克・瓜達拉馬・索利斯 Enrique GUADARRAMA SOLIS"
+  },
+  {
+    "圖片檔名": "artist_76",
+    "label": "入選 Seleted",
+    "name": "曼努爾・索力斯 Manuel SOLÍS"
+  },
+  {
+    "圖片檔名": "artist_77",
+    "label": "入選 Seleted",
+    "name": "瑪麗亞・露易莎・艾斯特拉達・桑切斯 Maria Luisa ESTRADA SANCHEZ"
+  },
+  {
+    "圖片檔名": "artist_78",
+    "label": "入選 Seleted",
+    "name": "馬可・安東尼奧・加西亞・羅塞萊斯 Marco Antonio GARCIA ROSALES"
+  },
+  {
+    "圖片檔名": "artist_79",
+    "label": "入選 Seleted",
+    "name": "黛安娜・摩拉里斯・加利西亞 Diana MORALES GALICIA"
+  },
+  {
+    "圖片檔名": "artist_80",
+    "label": "入選 Seleted",
+    "name": "維斯娜・博斯科維奇 Vesna BOSKOVIC"
+  },
+  {
+    "圖片檔名": "artist_81",
+    "label": "入選 Seleted",
+    "name": "蘇迪普・巴施亞爾 Sudeep BASHYAL"
+  },
+  {
+    "圖片檔名": "artist_82",
+    "label": "入選 Seleted",
+    "name": "阿爾瓦羅・巴雷拉 Alvaro BARRERA"
+  },
+  {
+    "圖片檔名": "artist_83",
+    "label": "入選 Seleted",
+    "name": "山繆・朋納索 Samuel PENASO"
+  },
+  {
+    "圖片檔名": "artist_84",
+    "label": "入選 Seleted",
+    "name": "亨利埃・巴塔札・帕嘉里宛干 Henrielle Baltazar PAGKALIWANGAN"
+  },
+  {
+    "圖片檔名": "artist_85",
+    "label": "入選 Seleted",
+    "name": "安娜・特羅亞諾夫斯卡 Anna TROJANOWSKA"
+  },
+  {
+    "圖片檔名": "artist_86",
+    "label": "入選 Seleted",
+    "name": "帕維爾・科維亞特科夫斯基 Paweł KWIATKOWSKI"
+  },
+  {
+    "圖片檔名": "artist_87",
+    "label": "入選 Seleted",
+    "name": "斯拉沃米爾・切維克 Slawomir CWIEK"
+  },
+  {
+    "圖片檔名": "artist_88",
+    "label": "入選 Seleted",
+    "name": "希薇亞・茨澤豪斯卡 Sylwia ZDZICHOWSKA"
+  },
+  {
+    "圖片檔名": "artist_89",
+    "label": "入選 Seleted",
+    "name": "瑪寇札塔・查瑞巴 Malgorzata ZAREMBA"
+  },
+  {
+    "圖片檔名": "artist_90",
+    "label": "入選 Seleted",
+    "name": "安格涅絲卡・拉科馬 Agnieszka ŁAKOMA"
+  },
+  {
+    "圖片檔名": "artist_91",
+    "label": "入選 Seleted",
+    "name": "漢娜・羅茲帕婭 Hanna ROZPARA"
+  },
+  {
+    "圖片檔名": "artist_92",
+    "label": "入選 Seleted",
+    "name": "卡蜜拉・卡斯蒲皮科斯卡 Kamila KASPRZYKOWSKA"
+  },
+  {
+    "圖片檔名": "artist_93",
+    "label": "入選 Seleted",
+    "name": "伊娃・布德卡 Ewa BUDKA"
+  },
+  {
+    "圖片檔名": "artist_94",
+    "label": "入選 Seleted",
+    "name": "卡塔芝娜・布德卡 Katarzyna BUDKA"
+  },
+  {
+    "圖片檔名": "artist_95",
+    "label": "入選 Seleted",
+    "name": "卡洛爾・波梅卡拉 Karol POMYKAŁA"
+  },
+  {
+    "圖片檔名": "artist_96",
+    "label": "入選 Seleted",
+    "name": "卡密爾・庫庫雷克 Kamil KOCUREK"
+  },
+  {
+    "圖片檔名": "artist_97",
+    "label": "入選 Seleted",
+    "name": "米洛斯拉夫・派夫洛夫斯基 Miroslaw PAWLOWSKI"
+  },
+  {
+    "圖片檔名": "artist_98",
+    "label": "入選 Seleted",
+    "name": "瑪德蓮娜・漢斯・史黛凡絲卡 Magdalena HANYSZ- STEFAŃSKA"
+  },
+  {
+    "圖片檔名": "artist_99",
+    "label": "入選 Seleted",
+    "name": "葛格瑞戈茲・巴古 Grzegorz BUGAJ"
+  },
+  {
+    "圖片檔名": "artist_100",
+    "label": "入選 Seleted",
+    "name": "馬爾他・萊希 Marta LECH"
+  },
+  {
+    "圖片檔名": "artist_101",
+    "label": "入選 Seleted",
+    "name": "沃奇克・泰勒伯勒・庫博拉吉維茲 Wojciech TYLBOR-KUBRAKIEWICZ"
+  },
+  {
+    "圖片檔名": "artist_102",
+    "label": "入選 Seleted",
+    "name": "揚・莫斯卡拉 Jan MOSKAŁA"
+  },
+  {
+    "圖片檔名": "artist_103",
+    "label": "入選 Seleted",
+    "name": "雅各布・茲德吉茲 Jakub ZDEJSZY"
+  },
+  {
+    "圖片檔名": "artist_104",
+    "label": "入選 Seleted",
+    "name": "卡塔爾茲娜・吉列卡・格連斯卡 Katarzyna GIELECKA-GRZEMSKA"
+  },
+  {
+    "圖片檔名": "artist_105",
+    "label": "入選 Seleted",
+    "name": "斯卡魯巴・西比拉 Skaluba SYBILLA"
+  },
+  {
+    "圖片檔名": "artist_106",
+    "label": "入選 Seleted",
+    "name": "馬略・馬丁內斯庫 Marius MARTINESCU"
+  },
+  {
+    "圖片檔名": "artist_107",
+    "label": "入選 Seleted",
+    "name": "艾蓮娜・荷洛德 Elena HLODEC"
+  },
+  {
+    "圖片檔名": "artist_108",
+    "label": "入選 Seleted",
+    "name": "弗拉基米爾・基維 Vladimir ZUEV"
+  },
+  {
+    "圖片檔名": "artist_109",
+    "label": "入選 Seleted",
+    "name": "伊利亞・克柳奇科夫 Ilia KLIUCHNIKOV"
+  },
+  {
+    "圖片檔名": "artist_110",
+    "label": "入選 Seleted",
+    "name": "弗朵・佩德拉格・ 米卡拉奇基 Ferdo Predrag MIKALAČKI"
+  },
+  {
+    "圖片檔名": "artist_111",
+    "label": "入選 Seleted",
+    "name": "米里亞娜・湯馬斯域 Mirjana TOMAŠEVIĆ"
+  },
+  {
+    "圖片檔名": "artist_112",
+    "label": "入選 Seleted",
+    "name": "黃嬌娥 NG Kiow-Ngor"
+  },
+  {
+    "圖片檔名": "artist_113",
+    "label": "入選 Seleted",
+    "name": "勞勃・揚科維克 Robert JANCOVIC"
+  },
+  {
+    "圖片檔名": "artist_114",
+    "label": "入選 Seleted",
+    "name": "權惠貞 KWON Hyejeong"
+  },
+  {
+    "圖片檔名": "artist_115",
+    "label": "入選 Seleted",
+    "name": "李元淑 LEE Wonsuk"
+  },
+  {
+    "圖片檔名": "artist_116",
+    "label": "入選 Seleted",
+    "name": "弗朗西斯科・維拉斯科・費爾南德茲 Francisco VELASCO FERNÁNDEZ"
+  },
+  {
+    "圖片檔名": "artist_117",
+    "label": "入選 Seleted",
+    "name": "瑪麗亞・卡門・伊薩斯 Maria Carmen ISASI"
+  },
+  {
+    "圖片檔名": "artist_118",
+    "label": "入選 Seleted",
+    "name": "洪宇蕎 HONG Yu-Chiau"
+  },
+  {
+    "圖片檔名": "artist_119",
+    "label": "入選 Seleted",
+    "name": "朱夫誠 CHU Fu-Chen"
+  },
+  {
+    "圖片檔名": "artist_120",
+    "label": "入選 Seleted",
+    "name": "徐睿志 SHIU Ruei-Jr"
+  },
+  {
+    "圖片檔名": "artist_121",
+    "label": "入選 Seleted",
+    "name": "李文杰 LEE Wen-Jye"
+  },
+  {
+    "圖片檔名": "artist_122",
+    "label": "入選 Seleted",
+    "name": "盧宜承 LU I-Cheng"
+  },
+  {
+    "圖片檔名": "artist_123",
+    "label": "入選 Seleted",
+    "name": "吳明玲 WU Ming-Ling"
+  },
+  {
+    "圖片檔名": "artist_124",
+    "label": "入選 Seleted",
+    "name": "張芯晨 CHANG Hsin-Chen"
+  },
+  {
+    "圖片檔名": "artist_125",
+    "label": "入選 Seleted",
+    "name": "高春英 KAO Chun-Ying"
+  },
+  {
+    "圖片檔名": "artist_126",
+    "label": "入選 Seleted",
+    "name": "詹濰棻 CHAN Wei-Feng"
+  },
+  {
+    "圖片檔名": "artist_127",
+    "label": "入選 Seleted",
+    "name": "邱品呈 CIOU Pin-Cheng"
+  },
+  {
+    "圖片檔名": "artist_128",
+    "label": "入選 Seleted",
+    "name": "林宜炫 LIN Yi-Hsuan"
+  },
+  {
+    "圖片檔名": "artist_129",
+    "label": "入選 Seleted",
+    "name": "林信源 LIN Hsin-Yuan"
+  },
+  {
+    "圖片檔名": "artist_130",
+    "label": "入選 Seleted",
+    "name": "陳昱儒 CHEN Yu-Ju"
+  },
+  {
+    "圖片檔名": "artist_131",
+    "label": "入選 Seleted",
+    "name": "拉塔娜・蘇達裡特 Rattana SUDJARIT"
+  },
+  {
+    "圖片檔名": "artist_132",
+    "label": "入選 Seleted",
+    "name": "維蒙馬爾・漢薩查瓦那 Vimonmarn KHANTHACHAVANA"
+  },
+  {
+    "圖片檔名": "artist_133",
+    "label": "入選 Seleted",
+    "name": "拉敏・桑傑蘇利亞 Ramin SANGCHAISURIYA"
+  },
+  {
+    "圖片檔名": "artist_134",
+    "label": "入選 Seleted",
+    "name": "布楚傑・基蒂潘 Boonchumjai KITTIPAN"
+  },
+  {
+    "圖片檔名": "artist_135",
+    "label": "入選 Seleted",
+    "name": "塔坦卡恩・法哈蘇 Nuttakarn VAJASUT"
+  },
+  {
+    "圖片檔名": "artist_136",
+    "label": "入選 Seleted",
+    "name": "桑納波・因塔里特 Thanapol INTALIT"
+  },
+  {
+    "圖片檔名": "artist_137",
+    "label": "入選 Seleted",
+    "name": "瓦・契拉柴伊薩庫爾 Wal CHIRACHAISAKUL"
+  },
+  {
+    "圖片檔名": "artist_138",
+    "label": "入選 Seleted",
+    "name": "普拉文・平邨普 Praween PIANGCHOOMPU"
+  },
+  {
+    "圖片檔名": "artist_139",
+    "label": "入選 Seleted",
+    "name": "維巴宏・尼魯邦 Vipabhon NILUBON"
+  },
+  {
+    "圖片檔名": "artist_140",
+    "label": "入選 Seleted",
+    "name": "提亞迪・贊塔翁 Thiyawdee JANTAWONG"
+  },
+  {
+    "圖片檔名": "artist_141",
+    "label": "入選 Seleted",
+    "name": "查克利・拉帕烏多莫列 Chakrit LAPAUDOMLOET"
+  },
+  {
+    "圖片檔名": "artist_142",
+    "label": "入選 Seleted",
+    "name": "旺才・那隆柴 Wanchai NARONGCHAI"
+  },
+  {
+    "圖片檔名": "artist_143",
+    "label": "入選 Seleted",
+    "name": "蘇皮查・揚切瓦特 Supicha YANCHEVAT"
+  },
+  {
+    "圖片檔名": "artist_144",
+    "label": "入選 Seleted",
+    "name": "佩查拉朋・索帕 Petcharaporn SOPAP"
+  },
+  {
+    "圖片檔名": "artist_145",
+    "label": "入選 Seleted",
+    "name": "涅特納里・布恩瓦魯塔拉亞 Nattnaeree BOONWARUTARAYA"
+  },
+  {
+    "圖片檔名": "artist_146",
+    "label": "入選 Seleted",
+    "name": "帕提朋・蘇潘朋 Patipon SUPANPONG"
+  },
+  {
+    "圖片檔名": "artist_147",
+    "label": "入選 Seleted",
+    "name": "提朋・宏斯門 Teppong HONGSRIMUNG"
+  },
+  {
+    "圖片檔名": "artist_148",
+    "label": "入選 Seleted",
+    "name": "珊納塔亞・他波 Shanatya TAHPOR"
+  },
+  {
+    "圖片檔名": "artist_149",
+    "label": "入選 Seleted",
+    "name": "傑基・康加 Jakkee KONHKAEW"
+  },
+  {
+    "圖片檔名": "artist_150",
+    "label": "入選 Seleted",
+    "name": "提拉烏・康昂 Teerawoot COM-ON"
+  },
+  {
+    "圖片檔名": "artist_151",
+    "label": "入選 Seleted",
+    "name": "費茲・博斯坦 Fai̇ze BOSTAN"
+  },
+  {
+    "圖片檔名": "artist_152",
+    "label": "入選 Seleted",
+    "name": "尼爾金・科蘇格魯 Nilgün KÖSEOĞLU"
+  },
+  {
+    "圖片檔名": "artist_153",
+    "label": "入選 Seleted",
+    "name": "薩哈拉・齊切克 Zehra ÇIÇEK"
+  },
+  {
+    "圖片檔名": "artist_154",
+    "label": "入選 Seleted",
+    "name": "艾利夫・安巴皮納爾 Elif ANBARPINAR"
+  },
+  {
+    "圖片檔名": "artist_155",
+    "label": "入選 Seleted",
+    "name": "艾森・耶勒瑪茲 Aysen YILMAZ"
+  },
+  {
+    "圖片檔名": "artist_156",
+    "label": "入選 Seleted",
+    "name": "科莫爾・伊迪茲 Kemal YILDIZ"
+  },
+  {
+    "圖片檔名": "artist_157",
+    "label": "入選 Seleted",
+    "name": "亞歷山大・納霍尼 Oleksandr NAHORNYI"
+  },
+  {
+    "圖片檔名": "artist_158",
+    "label": "入選 Seleted",
+    "name": "奧蕾絲雅・朱拉耶娃 Olesya DZHURAYEVA"
+  },
+  {
+    "圖片檔名": "artist_159",
+    "label": "入選 Seleted",
+    "name": "伊恩・布朗 Ian BROWN"
+  },
+  {
+    "圖片檔名": "artist_160",
+    "label": "入選 Seleted",
+    "name": "莉迪亞・安塔纳西耶维奇 Lidija ANTANASIJEVIC"
+  },
+  {
+    "圖片檔名": "artist_161",
+    "label": "入選 Seleted",
+    "name": "強・雷 Jon RENZELLA"
+  },
+  {
+    "圖片檔名": "artist_162",
+    "label": "入選 Seleted",
+    "name": "芭芭拉・杜瓦 Barbara DUVAL"
+  },
+  {
+    "圖片檔名": "artist_163",
+    "label": "入選 Seleted",
+    "name": "艾咪・山德士 Amy SANDS"
+  },
+  {
+    "圖片檔名": "artist_164",
+    "label": "入選 Seleted",
+    "name": "葛雷斯・斯皮 Grace SIPPY"
+  }
+]
