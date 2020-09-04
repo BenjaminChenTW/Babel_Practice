@@ -1,0 +1,35 @@
+{
+    "id": "string",
+    "title": "string",
+    "subtitle": "string",
+    "intro": {
+        "info": "string",
+        "description": "long string",
+        "hyperlinks": [{
+            "link": "url",
+            "name": "string"
+        }],
+        "youtube_links": ["url"]
+    },
+    "show_room": ["string"],
+    "creation": [{
+        "title": "string",
+        "creator": "string",
+        "description": "long string",
+        "type": "photo or video or sound",
+        "others": {
+            "photo_amount": 0,
+            "hyperlinks": [{
+                "link": "url",
+                "name": "string"
+            }],
+            "youtube_link": "url",
+            "soundcloud_link": "url"
+        }
+    }],
+    "about": [{
+        "type": "curator or artist",
+        "description": "long string",
+        "image_amount": 0
+    }]
+}
