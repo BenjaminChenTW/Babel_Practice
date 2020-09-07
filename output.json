@@ -21,7 +21,7 @@
             "name": "string"
         }]
     },
-    "show_room": [{
+    "showroom": [{
         "name":"string",
         "url": "string"
     }],
@@ -29,6 +29,7 @@
         "title": "string",
         "creator": "string",
         "description": "long string",
+        "description_for_showroom": "long string",
         "media": [{
             "type": "photo or video",
             "url":"LINK"
