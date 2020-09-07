@@ -16,13 +16,15 @@
         "title": "string",
         "creator": "string",
         "description": "long string",
-        "type": "photo or video or sound",
-        "links": ["LINK"],
+        "media": [{
+            "type": "photo or video",
+            "url":"LINK"
+        }],
+        "sound": ["LINK"],
         "hyperlinks": [{
             "link": "url",
             "name": "string"
-        }],
-        "youtube_link": "url"
+        }]
     }],
     "about": {
         "curator": [{
