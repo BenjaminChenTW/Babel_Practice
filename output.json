@@ -3,15 +3,28 @@
     "title": "string",
     "subtitle": "string",
     "intro": {
-        "info": "string",
+        "title": "string",
+        "full_name": "string",
+        "curator": "string",
+        "venue": "string",
+        "time": "string",
         "description": "long string",
+        "sound": [{
+            "name": "string",
+            "type": "soundcloud or soundfile",
+            "url": "LINK"
+        }], 
+        "category":["category_id"],
+        "youtube_links": ["url"],
         "hyperlinks": [{
             "link": "url",
             "name": "string"
-        }],
-        "youtube_links": ["url"]
+        }]
     },
-    "show_room": ["string"],
+    "show_room": [{
+        "name":"string",
+        "url": "string"
+    }],
     "creation": [{
         "title": "string",
         "creator": "string",
@@ -20,7 +33,12 @@
             "type": "photo or video",
             "url":"LINK"
         }],
-        "sound": ["LINK"],
+        "sound": [{
+            "name": "string",
+            "type": "soundcloud or soundfile",
+            "url": "LINK"
+        }],
+        "category":["category_id"], 
         "hyperlinks": [{
             "link": "url",
             "name": "string"
@@ -28,12 +46,22 @@
     }],
     "about": {
         "curator": [{
+            "name":"string",
             "description": "long string",
-            "links": ["LINK"]
+            "media": ["LINK"], 
+            "hyperlinks": [{
+                "link": "url",
+                "name": "string"
+            }]
         }],
         "artist": [{
+            "name":"string",
             "description": "long string",
-            "links": ["LINK"]
+            "media": ["LINK"], 
+            "hyperlinks": [{
+                "link": "url",
+                "name": "string"
+            }]
         }]
     }
 }
