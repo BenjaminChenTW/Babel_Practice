@@ -38,6 +38,7 @@
             "type": "soundcloud or soundfile",
             "url": "LINK"
         }],
+        "tag":"tag_id", 
         "category":["category_id"], 
         "hyperlinks": [{
             "link": "url",
@@ -48,6 +49,7 @@
         "curator": [{
             "name":"string",
             "description": "long string",
+            "tag":"tag_id", 
             "media": ["LINK"], 
             "hyperlinks": [{
                 "link": "url",
@@ -57,6 +59,7 @@
         "artist": [{
             "name":"string",
             "description": "long string",
+            "tag":"tag_id", 
             "media": ["LINK"], 
             "hyperlinks": [{
                 "link": "url",
