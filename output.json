@@ -1,9 +1,9 @@
 {
     "id": "string",
+    "alias": "string",
     "title": "string",
     "subtitle": "string",
     "intro": {
-        "title": "string",
         "full_name": "string",
         "curator": "string",
         "venue": "string",
@@ -11,19 +11,19 @@
         "description": "long string",
         "sound": [{
             "name": "string",
-            "type": "soundcloud or soundfile",
+            "type": "SoundCloud or file",
             "url": "LINK"
-        }], 
-        "category":["category_id"],
-        "youtube_links": ["url"],
-        "hyperlinks": [{
-            "link": "url",
+        }],
+        "category": ["category_id"],
+        "youtube": ["url"],
+        "hyperlink": [{
+            "url": "LINK",
             "name": "string"
         }]
     },
     "showroom": [{
-        "name":"string",
-        "url": "string"
+        "url": "LINK",
+        "name": "string"
     }],
     "creation": [{
         "title": "string",
@@ -31,39 +31,48 @@
         "description": "long string",
         "description_for_showroom": "long string",
         "media": [{
+            "name": "string",
             "type": "photo or video",
-            "url":"LINK"
+            "url": "LINK"
         }],
         "sound": [{
             "name": "string",
             "type": "soundcloud or soundfile",
             "url": "LINK"
         }],
-        "tag":"tag_id", 
-        "category":["category_id"], 
-        "hyperlinks": [{
+        "tag": "tag_id",
+        "category": ["category_id"],
+        "hyperlink": [{
             "link": "url",
             "name": "string"
         }]
     }],
     "about": {
         "curator": [{
-            "name":"string",
+            "name": "string",
             "description": "long string",
-            "tag":"tag_id", 
-            "media": ["LINK"], 
-            "hyperlinks": [{
-                "link": "url",
+            "tag": "tag_id",
+            "media": [{
+                "name": "string",
+                "type": "photo or video",
+                "url": "LINK"
+            }],
+            "hyperlink": [{
+                "url": "LINK",
                 "name": "string"
             }]
         }],
         "artist": [{
-            "name":"string",
+            "name": "string",
             "description": "long string",
-            "tag":"tag_id", 
-            "media": ["LINK"], 
-            "hyperlinks": [{
-                "link": "url",
+            "tag": "tag_id",
+            "media": [{
+                "name": "string",
+                "type": "photo or video",
+                "url": "LINK"
+            }],
+            "hyperlink": [{
+                "url": "LINK",
                 "name": "string"
             }]
         }]
