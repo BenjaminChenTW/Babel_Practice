@@ -36,6 +36,11 @@ const filesNameCreator = (type, name, amount = 1, multiIndex = [], multiAmount =
       files.push(`/exhibition_${name}/exhibition_kv_${name}`);
       return files;
     }
+    case 'kv_all': {
+      let files = [];
+      files.push(require(`../assets/exhibition_${name}/exhibition_kv_${name}`).default);
+      return files;
+    }
     case 'kv_info': {
       let files = [];
       files.push(require(`../assets/exhibition_${name}/exhibition_kv_${name}`).default.info);
@@ -603,16 +608,41 @@ const files = {
     title: '在瘟疫的天空下：病毒的隱喻及其他 Under the Pandemic: The Metaphor of Virus and Others',
     artist_name: '藝術銀行  Art Bank Taiwan',
     artist: filesNameCreator('artist', 'underskyofplague', 0),
-    creation: filesNameCreator('creation', 'underskyofplague', 14, [8], [4]),
+    creation: filesNameCreator('creation', 'underskyofplague', 15, [9], [4]),
     curator: filesNameCreator('curator', 'underskyofplague'),
     kv: filesNameCreator('kv', 'underskyofplague'),
     kv_info: filesNameCreator('kv_info', 'underskyofplague'),
+    kv_all: filesNameCreator('kv_all', 'underskyofplague'),
     kv_description: filesNameCreator('kv_description', 'underskyofplague'),
     main: filesNameCreator('main', 'underskyofplague'),
     banner: filesNameCreator('banner', 'underskyofplague'),
     youtube: filesNameCreator('youtube', 'underskyofplague'),
     website: filesNameCreator('website', 'underskyofplague'),
     creationIsJson: true,
+    teamSetting: {
+      artistTitle: '展出藝術家',
+    },
+  },
+  ars2020: {
+    name: 'ars2020',
+    title:
+      'ARS 2020 - Tsing Hua Garden 奧地利林茲國際電子藝術節 2020 - 清華園 暨 15th 李國鼎K.T.科藝獎',
+    artist_name: '國立清華大學',
+    artist: filesNameCreator('artist', 'ars2020', 0),
+    creation: filesNameCreator('creation', 'ars2020', 23),
+    curator: filesNameCreator('curator', 'ars2020'),
+    kv: filesNameCreator('kv', 'ars2020'),
+    kv_info: filesNameCreator('kv_info', 'ars2020'),
+    kv_all: filesNameCreator('kv_all', 'ars2020'),
+    kv_description: filesNameCreator('kv_description', 'ars2020'),
+    main: filesNameCreator('main', 'ars2020'),
+    banner: filesNameCreator('banner', 'ars2020'),
+    youtube: filesNameCreator('youtube', 'ars2020'),
+    website: filesNameCreator('website', 'ars2020'),
+    creationIsJson: true,
+    teamSetting: {
+      artistTitle: '展出藝術家',
+    },
   },
 };
 
