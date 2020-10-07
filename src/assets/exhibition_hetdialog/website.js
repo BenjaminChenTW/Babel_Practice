@@ -1,4 +1,1 @@
-export default [
-  'https://my.matterport.com/show/?m=zRYwTzJo9QN',
-  'https://my.matterport.com/show/?m=vFygAbnnXnA',
-];
+export default ['https://embed.artogo.tw/0/zRYwTzJo9QN', 'https://embed.artogo.tw/0/vFygAbnnXnA'];

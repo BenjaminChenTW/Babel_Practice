@@ -1,1 +1,1 @@
-export default ['https://mpembed.com/show/?m=VY2eP6Ve8Ec&mpu=609'];
+export default ['https://embed.artogo.tw/1/uJKGTmui6W6'];

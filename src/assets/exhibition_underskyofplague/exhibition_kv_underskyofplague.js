@@ -9,4 +9,14 @@ Under the Pandemic: The Metaphor of Virus and Others
 403 台中市西區自由路一段150號
 No. 150, Sec. 1, Ziyou Rd., West Dist., Taichung City 403, Taiwan(R.O.C.)
 `,
+  hyperlinks: [
+    {
+      link: 'https://www.facebook.com/twartbank/',
+      text: '展覽與活動FB',
+    },
+    {
+      link: 'https://artbank.ntmofa.gov.tw/',
+      text: '展覽與活動官網',
+    },
+  ],
 };

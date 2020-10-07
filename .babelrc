@@ -1,15 +1,19 @@
 {
-    "plugins": [
-        ["@babel/plugin-transform-modules-commonjs", {
-            "allowTopLevelThis": true
-        }]
-    ],
-    "presets": [
-        [
-            "@babel/preset-env",
-            {
-                "useBuiltIns": "entry"
-            }
-        ]
+  "plugins": [
+    [
+      "@babel/plugin-transform-modules-commonjs",
+      {
+        "allowTopLevelThis": true
+      }
     ]
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": { "version": 3, "proposals": true }
+      }
+    ]
+  ]
 }
