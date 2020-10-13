@@ -6,37 +6,162 @@ import {
 } from "./utils";
 import fs from "fs";
 
-Object.keys(files).forEach((aFile) => {
-  let {
-    creationIsJson,
-    creation,
-    curator,
-    name
-  } = files[aFile];
-  let creationJson = null;
-  if (creationIsJson) {
-    creationJson = require(`./assets/exhibition_${name}/creation.json`).Creation;
-  }
-  files[aFile].creationList = creation.map((aCreation, index) => {
-    let file = creationIsJson ?
-      creationJson[index] : Array.isArray(aCreation) ?
-      require(`./assets${aCreation[0]}`).default : require(`./assets${aCreation}`).default;
-    let imageObj = creationIsJson ? creationJson[index] : null;
-    let imageList = Array.isArray(aCreation) ? aCreation : [aCreation];
-    return {
-      ...file,
-      imgPath: imageList.map(aImage => getImagePath(imageObj, aImage))
-    }
-  });
+import axios from "axios";
 
-  files[aFile].artistDescription = require(`./assets/exhibition_${name}/artist`).default;
-  files[aFile].teamDescription = curator ? require(`./assets${curator}`).default : [];
-  if (!Array.isArray(files[aFile].teamDescription)) files[aFile].teamDescription = [files[aFile].teamDescription]
+const apiRes = JSON.parse(fs.readFileSync("./apiCache.json")) || {};
+const fullData = {};
 
-  delete files[aFile].creation;
-  delete files[aFile].creationIsJson;
-  delete files[aFile].curator;
-});
+Promise
+  .all(Object.keys(files).map(exhibitionId => {
+    return new Promise((resolve, reject) => {
+      let {
+        creationIsJson,
+        creation,
+        curator,
+        name
+      } = files[exhibitionId];
+      let creationJson = null;
+      if (creationIsJson) {
+        creationJson = require(`./assets/exhibition_${name}/creation.json`)
+          .Creation;
+      }
+      files[exhibitionId].creationList = creation.map((aCreation, index) => {
+        let file = creationIsJson ?
+          creationJson[index] :
+          Array.isArray(aCreation) ?
+          require(`./assets${aCreation[0]}`).default :
+          require(`./assets${aCreation}`).default;
+        let imageObj = creationIsJson ? creationJson[index] : null;
+        let imageList = Array.isArray(aCreation) ? aCreation : [aCreation];
+        return {
+          ...file,
+          imgPath: imageList.map((aImage) => getImagePath(imageObj, aImage)),
+        };
+      });
 
-fs.writeFileSync("./exhibition.json", JSON.stringify(files));
-console.log("Done.");
+      files[
+        exhibitionId
+      ].artistDescription = require(`./assets/exhibition_${name}/artist`).default;
+      files[exhibitionId].teamDescription = curator ?
+        require(`./assets${curator}`).default : [];
+      if (!Array.isArray(files[exhibitionId].teamDescription))
+        files[exhibitionId].teamDescription = [files[exhibitionId].teamDescription];
+
+      delete files[exhibitionId].creation;
+      delete files[exhibitionId].creationIsJson;
+      delete files[exhibitionId].curator;
+
+      if (!apiRes[exhibitionId]) {
+        axios
+          .get(`https://artogo.tw/api/exhibition?url=${exhibitionId}`)
+          .then((res) => {
+            apiRes[exhibitionId] = res.data;
+            fullData[exhibitionId] = {
+              alias: exhibitionId,
+              ...files[exhibitionId],
+              ...apiRes[exhibitionId],
+            };
+            console.log(`Fetch: ${exhibitionId}`)
+            resolve();
+          })
+          .catch((err) => {
+            console.error(err);
+            reject();
+          });
+      } else {
+        fullData[exhibitionId] = {
+          alias: exhibitionId,
+          ...files[exhibitionId],
+          ...apiRes[exhibitionId],
+        };
+        resolve();
+      }
+    });
+  }))
+  .then(data => {
+    fs.writeFileSync("./exhibition.json", JSON.stringify(files));
+    fs.writeFileSync("./apiCache.json", JSON.stringify(apiRes));
+    console.log("Done raw.");
+
+    const formatted = {};
+    Object.values(fullData).forEach((anExhibition) => {
+      formatted[anExhibition.alias] = {
+        intro: {
+          alias: anExhibition.alias,
+          key_vision_endpoint_id: anExhibition.kv[0],
+          title: anExhibition.title,
+          full_name: anExhibition.full_name || anExhibition.name,
+          curator: anExhibition.artist_name,
+          venue: anExhibition.venues.map(aVenue =>
+            aVenue.name + (aVenue.space ? `｜${aVenue.space}` : "")).join("、"),
+          time: `${anExhibition.start_date} ~ ${anExhibition.end_date}`,
+          description: anExhibition.description,
+          sound: [],
+          category: [],
+          youtube: anExhibition.youtube.filter(aLink => aLink !== ""),
+          hyperlink: anExhibition.hyper_link ? [{
+              name: anExhibition.hyper_link.text,
+              url: anExhibition.hyper_link.link
+            }] : anExhibition.kv_all ?
+            anExhibition.kv_all.hyperlinks ?
+            anExhibition.kv_all.hyperlinks : [] : []
+        },
+        // "creation": [{
+        //   "title": "string",
+        //   "creator": "string",
+        //   "description": "string",
+        //   "description_for_showroom": "string",
+        //   "media": [{
+        //     "type": "video_endpoint",
+        //     "url": "string",
+        //     "endpoint_id": "string"
+        //   }],
+        //   "sound": [{
+        //     "type": "SoundCloud",
+        //     "url": "string",
+        //     "endpoint_id": "string"
+        //   }],
+        //   "tag": "string",
+        //   "category": [
+        //     "string"
+        //   ],
+        //   "hyperlink": [{
+        //     "name": "string",
+        //     "url": "string"
+        //   }]
+        // }],
+        // "about": [{
+        //   "artist": [{
+        //     "name": "string",
+        //     "description": "string",
+        //     "tag": "string",
+        //     "media": [{
+        //       "type": "video_endpoint",
+        //       "url": "string",
+        //       "endpoint_id": "string"
+        //     }],
+        //     "hyperlink": [{
+        //       "name": "string",
+        //       "url": "string"
+        //     }]
+        //   }],
+        //   "curator": [{
+        //     "name": "string",
+        //     "description": "string",
+        //     "tag": "string",
+        //     "media": [{
+        //       "type": "video_endpoint",
+        //       "url": "string",
+        //       "endpoint_id": "string"
+        //     }],
+        //     "hyperlink": [{
+        //       "name": "string",
+        //       "url": "string"
+        //     }]
+        //   }]
+        // }]
+      };
+    });
+    fs.writeFileSync("./formatted.json", JSON.stringify(formatted));
+    console.log("Done format.");
+  })
