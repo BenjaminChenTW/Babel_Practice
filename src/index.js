@@ -89,7 +89,7 @@ Promise.all(
       let formatted_artist = {
         name: "name",
         description: anArtist.description,
-        tag: null,
+        upper_title: null,
         media,
         hyperlink: [],
       };
@@ -160,7 +160,7 @@ Promise.all(
                 },
               ]
             : [],
-          tag: null,
+          upper_title: null,
           category: [],
           hyperlink: aCreation.hyperlinks
             ? aCreation.hyperlinks.map((aLink) => ({
@@ -170,12 +170,13 @@ Promise.all(
             : [],
         };
       }),
+      showroom: anExhibition.website,
       about: {
         artist,
         curator: anExhibition.teamDescription.map((aTeam) => ({
           name: "name",
           description: aTeam.description,
-          tag: null,
+          upper_title: null,
           media:
             aTeam.image && aTeam.image !== ""
               ? [
