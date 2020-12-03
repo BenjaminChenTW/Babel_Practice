@@ -101,8 +101,9 @@ Promise.all(
       name_zh: anExhibition.title,
       name_en: "TEST",
       key_vision: `https://media.artogo.tw${anExhibition.kv[0]}.jpg`,
+      banner: `https://media.artogo.tw${anExhibition.banner[0]}.jpg`,
       curator: anExhibition.artist_name,
-      tag: [],
+      tag: ["3D展間"],
       category: [],
       intro: {
         full_name: anExhibition.full_name || anExhibition.name,

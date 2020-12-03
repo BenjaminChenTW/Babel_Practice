@@ -102,6 +102,7 @@ const files = {
     banner: filesNameCreator('banner', 'dodo'),
     youtube: filesNameCreator('youtube', 'dodo'),
     website: filesNameCreator('website', 'dodo'),
+    hideMenuIdx: [2],
   },
   asavessel: {
     name: 'asavessel',
@@ -117,6 +118,7 @@ const files = {
     banner: filesNameCreator('banner', 'asavessel'),
     youtube: filesNameCreator('youtube', 'asavessel'),
     website: filesNameCreator('website', 'asavessel'),
+    hideMenuIdx: [2],
   },
   todaughters: {
     name: 'todaughters',
@@ -132,6 +134,7 @@ const files = {
     banner: filesNameCreator('banner', 'todaughters'),
     youtube: filesNameCreator('youtube', 'todaughters'),
     website: filesNameCreator('website', 'todaughters'),
+    hideMenuIdx: [2],
   },
   treeandgoldfish: {
     name: 'treeandgoldfish',
@@ -147,6 +150,7 @@ const files = {
     banner: filesNameCreator('banner', 'treeandgoldfish'),
     youtube: filesNameCreator('youtube', 'treeandgoldfish'),
     website: filesNameCreator('website', 'treeandgoldfish'),
+    hideMenuIdx: [2],
   },
   simpledrawing: {
     name: 'simpledrawing',
@@ -162,6 +166,7 @@ const files = {
     banner: filesNameCreator('banner', 'simpledrawing'),
     youtube: filesNameCreator('youtube', 'simpledrawing'),
     website: filesNameCreator('website', 'simpledrawing'),
+    hideMenuIdx: [2],
   },
   planx: {
     name: 'planx',
@@ -177,6 +182,7 @@ const files = {
     banner: filesNameCreator('banner', 'planx'),
     youtube: filesNameCreator('youtube', 'planx'),
     website: filesNameCreator('website', 'planx'),
+    hideMenuIdx: [2],
   },
   FujiBrontosaurus: {
     name: 'FujiBrontosaurus',
@@ -193,6 +199,7 @@ const files = {
     youtube: filesNameCreator('youtube', 'FujiBrontosaurus'),
     website: filesNameCreator('website', 'FujiBrontosaurus'),
     creationIsJson: true,
+    hideMenuIdx: [2],
   },
   teacherday2019: {
     name: 'teacherday2019',
@@ -209,6 +216,7 @@ const files = {
     youtube: filesNameCreator('youtube', 'teacherday2019'),
     website: filesNameCreator('website', 'teacherday2019'),
     creationIsJson: true,
+    hideMenuIdx: [2],
   },
   IfCanBeRe: {
     name: 'IfCanBeRe',
@@ -240,6 +248,7 @@ const files = {
       artistTitle: '藝術家&策展人',
       curatorTitle: '駐村空間與協助展出',
     },
+    hideMenuIdx: [2],
   },
   meme: {
     name: 'meme',
@@ -266,6 +275,7 @@ const files = {
       link: 'https://www.facebook.com/109427027199076/videos/2833338010045765/',
       text: '展覽介紹',
     },
+    hideMenuIdx: [2],
   },
   siaoliam: {
     name: 'siaoliam',
@@ -384,6 +394,7 @@ const files = {
     youtube: filesNameCreator('youtube', 'siaoliam'),
     website: filesNameCreator('website', 'siaoliam'),
     creationIsJson: true,
+    hideMenuIdx: [2],
   },
   visiblesecrets: {
     name: 'visiblesecrets',
@@ -404,6 +415,7 @@ const files = {
     teamSetting: {
       artistTitle: '參展藝術家',
     },
+    hideMenuIdx: [2],
   },
   shoutouttotheworld: {
     name: 'shoutouttotheworld',
@@ -426,6 +438,7 @@ const files = {
     youtube: filesNameCreator('youtube', 'shoutouttotheworld'),
     website: filesNameCreator('website', 'shoutouttotheworld'),
     creationIsJson: true,
+    hideMenuIdx: [2],
   },
   noneedtobepersonal: {
     name: 'noneedtobepersonal',
@@ -442,6 +455,7 @@ const files = {
     youtube: filesNameCreator('youtube', 'noneedtobepersonal'),
     website: filesNameCreator('website', 'noneedtobepersonal'),
     creationIsJson: true,
+    hideMenuIdx: [2],
   },
   hetdialog: {
     name: 'hetdialog',
@@ -538,6 +552,7 @@ const files = {
     youtube: filesNameCreator('youtube', 'hetdialog'),
     website: filesNameCreator('website', 'hetdialog'),
     creationIsJson: true,
+    hideMenuIdx: [2],
   },
   outofsignalrange: {
     name: 'outofsignalrange',
@@ -554,6 +569,7 @@ const files = {
     youtube: filesNameCreator('youtube', 'outofsignalrange'),
     website: filesNameCreator('website', 'outofsignalrange'),
     creationIsJson: true,
+    hideMenuIdx: [2],
   },
   dbyprint: {
     name: 'dbyprint',
@@ -570,6 +586,7 @@ const files = {
     youtube: filesNameCreator('youtube', 'dbyprint'),
     website: filesNameCreator('website', 'dbyprint'),
     creationIsJson: true,
+    hideMenuIdx: [2],
   },
   secretsouth: {
     name: 'secretsouth',
@@ -586,6 +603,7 @@ const files = {
     youtube: filesNameCreator('youtube', 'secretsouth'),
     website: filesNameCreator('website', 'secretsouth'),
     creationIsJson: true,
+    hideMenuIdx: [2],
   },
   youareme: {
     name: 'youareme',
@@ -602,6 +620,7 @@ const files = {
     youtube: filesNameCreator('youtube', 'youareme'),
     website: filesNameCreator('website', 'youareme'),
     creationIsJson: true,
+    hideMenuIdx: [2],
   },
   underskyofplague: {
     name: 'underskyofplague',
@@ -622,6 +641,7 @@ const files = {
     teamSetting: {
       artistTitle: '展出藝術家',
     },
+    hideMenuIdx: [2],
   },
   ars2020: {
     name: 'ars2020',
@@ -643,6 +663,64 @@ const files = {
     teamSetting: {
       artistTitle: '展出藝術家',
     },
+    hideMenuIdx: [],
+  },
+  y2k: {
+    name: 'y2k',
+    title: 'Biosignal信釋',
+    artist_name: '周巧其、胡悠揚',
+    artist: filesNameCreator('artist', 'y2k', 2),
+    creation: filesNameCreator('creation', 'y2k', 4, [1, 2, 3, 4], [1, 1, 1, 1]),
+    curator: filesNameCreator('curator', 'y2k'),
+    kv: filesNameCreator('kv', 'y2k'),
+    kv_info: filesNameCreator('kv_info', 'y2k'),
+    kv_all: filesNameCreator('kv_all', 'y2k'),
+    kv_description: filesNameCreator('kv_description', 'y2k'),
+    main: filesNameCreator('main', 'y2k'),
+    banner: filesNameCreator('banner', 'y2k'),
+    youtube: filesNameCreator('youtube', 'y2k'),
+    website: filesNameCreator('website', 'y2k'),
+    creationIsJson: true,
+    teamSetting: {
+      artistTitle: '展出藝術家',
+    },
+    hideMenuIdx: [2],
+  },
+  harborcoord: {
+    name: 'harborcoord',
+    title: '古笨港的座標',
+    artist_name: '南藝大藝術史學系',
+    artist: filesNameCreator('artist', 'harborcoord', 0),
+    creation: filesNameCreator('creation', 'harborcoord', 78),
+    curator: filesNameCreator('curator', 'harborcoord'),
+    kv: filesNameCreator('kv', 'harborcoord'),
+    kv_info: filesNameCreator('kv_info', 'harborcoord'),
+    kv_all: filesNameCreator('kv_all', 'harborcoord'),
+    kv_description: filesNameCreator('kv_description', 'harborcoord'),
+    main: filesNameCreator('main', 'harborcoord'),
+    banner: filesNameCreator('banner', 'harborcoord'),
+    youtube: filesNameCreator('youtube', 'harborcoord'),
+    website: filesNameCreator('website', 'harborcoord'),
+    creationIsJson: true,
+    hideMenuIdx: [2],
+  },
+  hsinchupose: {
+    name: 'hsinchupose',
+    title: '新竹擺態 Hsinchu Pose',
+    artist_name: '林欣怡、近藤悟',
+    artist: filesNameCreator('artist', 'hsinchupose', 2),
+    creation: filesNameCreator('creation', 'hsinchupose', 69),
+    curator: filesNameCreator('curator', 'hsinchupose'),
+    kv: filesNameCreator('kv', 'hsinchupose'),
+    kv_info: filesNameCreator('kv_info', 'hsinchupose'),
+    kv_all: filesNameCreator('kv_all', 'hsinchupose'),
+    kv_description: filesNameCreator('kv_description', 'hsinchupose'),
+    main: filesNameCreator('main', 'hsinchupose'),
+    banner: filesNameCreator('banner', 'hsinchupose'),
+    youtube: filesNameCreator('youtube', 'hsinchupose'),
+    website: filesNameCreator('website', 'hsinchupose'),
+    creationIsJson: true,
+    hideMenuIdx: [2],
   },
 };
 
