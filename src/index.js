@@ -7,6 +7,9 @@ import axios from "axios";
 const apiRes = JSON.parse(fs.readFileSync("./apiCache.json")) || {};
 const fullData = {};
 
+const matterport = /matterport\.com\/show\/\?m=(\w{11})/;
+const mpembed = /.*mpembed.*m=(\w*)/;
+
 Promise.all(
   Object.keys(files).map((exhibitionId) => {
     return new Promise((resolve, reject) => {
@@ -95,6 +98,13 @@ Promise.all(
       };
       return formatted_artist;
     });
+    let showroom = anExhibition.website.map((aRoom) => {
+      if (matterport.test(aRoom))
+        return `https://embed.artogo.tw/0/${aRoom.match(matterport)[1]}`;
+      if (mpembed.test(aRoom))
+        return `https://embed.artogo.tw/1/${aRoom.match(mpembed)[1]}`;
+      return aRoom;
+    });
 
     formatted[anExhibition.alias] = {
       alias: anExhibition.alias,
@@ -171,7 +181,7 @@ Promise.all(
             : [],
         };
       }),
-      showroom: anExhibition.website,
+      showroom,
       about: {
         artist,
         curator: anExhibition.teamDescription.map((aTeam) => ({
