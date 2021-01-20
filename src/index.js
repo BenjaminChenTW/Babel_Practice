@@ -1,5 +1,6 @@
 import { files } from "./constant/fileMapping";
 import { getImagePath } from "./utils";
+import crypto from "crypto";
 import fs from "fs";
 
 import axios from "axios";
@@ -9,6 +10,12 @@ const fullData = {};
 
 const matterport = /matterport\.com\/show\/\?m=(\w{11})/;
 const mpembed = /.*mpembed.*m=(\w*)/;
+
+function genID() {
+  const buffer = crypto.randomBytes(6);
+  const token = buffer.toString("hex");
+  return token;
+}
 
 Promise.all(
   Object.keys(files).map((exhibitionId) => {
@@ -81,10 +88,11 @@ Promise.all(
   console.log("Done raw.");
 
   const formatted = {};
+  const aliasMap = {};
   Object.values(fullData).forEach((anExhibition) => {
     const artist = anExhibition.artistDescription.map((anArtist) => {
       let media = anExhibition.artist
-        .slice(anArtist.start, anArtist.end)
+        .slice(anArtist.start, anArtist.end + 1)
         .map((aMedia) => ({
           type: "photo",
           url: `https://media.artogo.tw${aMedia}.jpg`,
@@ -106,7 +114,9 @@ Promise.all(
       return aRoom;
     });
 
-    formatted[anExhibition.alias] = {
+    const hash = genID();
+    aliasMap[anExhibition.alias] = hash;
+    formatted[hash] = {
       alias: anExhibition.alias,
       name_zh: anExhibition.title,
       name_en: "TEST",
@@ -117,7 +127,6 @@ Promise.all(
       category: [],
       intro: {
         full_name: anExhibition.full_name || anExhibition.name,
-        curator: anExhibition.artist_name,
         duration: `${anExhibition.start_date} ~ ${anExhibition.end_date}`,
         open_hour: "open_hour",
         venue: anExhibition.venues
@@ -157,6 +166,7 @@ Promise.all(
             url: aCreation.video,
           });
         return {
+          id: genID(),
           index: index + 1,
           title: aCreation.title,
           creator: aCreation.creator,
@@ -202,6 +212,12 @@ Promise.all(
       },
     };
   });
-  fs.writeFileSync("./formatted.json", JSON.stringify(formatted));
+  fs.writeFileSync(
+    "./formatted.json",
+    JSON.stringify({
+      aliasMap,
+      exhibitions: formatted,
+    })
+  );
   console.log("Done format.");
 });
