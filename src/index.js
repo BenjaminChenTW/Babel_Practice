@@ -111,7 +111,7 @@ Promise.all(
         return `https://embed.artogo.tw/0/${aRoom.match(matterport)[1]}`;
       if (mpembed.test(aRoom))
         return `https://embed.artogo.tw/1/${aRoom.match(mpembed)[1]}`;
-      return aRoom;
+      return { name: null, url: aRoom };
     });
 
     const hash = genID();
@@ -152,14 +152,13 @@ Promise.all(
           : [],
       },
       creation: anExhibition.creationList.map((aCreation, index) => {
-        let media = (aCreation.video ? [aCreation.video] : []).concat(
-          aCreation.imgPath
-            ? aCreation.imgPath.map((aImg) => ({
-                type: "photo",
-                url: aImg,
-              }))
-            : []
-        );
+        let media = aCreation.imgPath
+          ? aCreation.imgPath.map((aImg) => ({
+              type: "photo",
+              url: aImg,
+            }))
+          : [];
+        let media_thumb = media.length > 0 ? media[0].url : null;
         if (aCreation.video)
           media.unshift({
             type: "video",
@@ -171,7 +170,7 @@ Promise.all(
           title: aCreation.title,
           creator: aCreation.creator,
           description: aCreation.description,
-          media_thumb: media.length > 0 ? media[0].url : null,
+          media_thumb,
           media,
           sound: aCreation.audio
             ? [
