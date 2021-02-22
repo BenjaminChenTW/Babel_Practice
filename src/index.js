@@ -107,11 +107,12 @@ Promise.all(
       return formatted_artist;
     });
     let showroom = anExhibition.website.map((aRoom) => {
+      let url = aRoom;
       if (matterport.test(aRoom))
-        return `https://embed.artogo.tw/0/${aRoom.match(matterport)[1]}`;
-      if (mpembed.test(aRoom))
-        return `https://embed.artogo.tw/1/${aRoom.match(mpembed)[1]}`;
-      return { name: null, url: aRoom };
+        url = `https://embed.artogo.tw/0/${aRoom.match(matterport)[1]}`;
+      else if (mpembed.test(aRoom))
+        url = `https://embed.artogo.tw/1/${aRoom.match(mpembed)[1]}`;
+      return { name: null, url };
     });
 
     const hash = genID();
