@@ -30,8 +30,8 @@ Promise.all(
         let file = creationIsJson
           ? creationJson[index]
           : Array.isArray(aCreation)
-          ? require(`./assets${aCreation[0]}`).default
-          : require(`./assets${aCreation}`).default;
+            ? require(`./assets${aCreation[0]}`).default
+            : require(`./assets${aCreation}`).default;
         let imageObj = creationIsJson ? creationJson[index] : null;
         let imageList = Array.isArray(aCreation) ? aCreation : [aCreation];
         return {
@@ -48,7 +48,10 @@ Promise.all(
         : [];
       if (!Array.isArray(files[exhibitionId].teamDescription))
         files[exhibitionId].teamDescription = [
-          files[exhibitionId].teamDescription,
+          {
+            image: curator,
+            description: files[exhibitionId].teamDescription
+          },
         ];
 
       delete files[exhibitionId].creation;
@@ -141,23 +144,23 @@ Promise.all(
         youtube: anExhibition.youtube.filter((aLink) => aLink !== ""),
         hyperlink: anExhibition.hyper_link
           ? [
-              {
-                name: anExhibition.hyper_link.text,
-                url: anExhibition.hyper_link.link,
-              },
-            ]
+            {
+              name: anExhibition.hyper_link.text,
+              url: anExhibition.hyper_link.link,
+            },
+          ]
           : anExhibition.kv_all
-          ? anExhibition.kv_all.hyperlinks
             ? anExhibition.kv_all.hyperlinks
-            : []
-          : [],
+              ? anExhibition.kv_all.hyperlinks
+              : []
+            : [],
       },
       creation: anExhibition.creationList.map((aCreation, index) => {
         let media = aCreation.imgPath
           ? aCreation.imgPath.map((aImg) => ({
-              type: "photo",
-              url: aImg,
-            }))
+            type: "photo",
+            url: aImg,
+          }))
           : [];
         let media_thumb = media.length > 0 ? media[0].url : null;
         if (aCreation.video)
@@ -175,19 +178,19 @@ Promise.all(
           media,
           sound: aCreation.audio
             ? [
-                {
-                  type: "file",
-                  url: `https://media.artogo.tw/exhibition_${anExhibition.alias}/${aCreation.audio}`,
-                },
-              ]
+              {
+                type: "file",
+                url: `https://media.artogo.tw/exhibition_${anExhibition.alias}/${aCreation.audio}`,
+              },
+            ]
             : [],
           upper_title: null,
           category: [],
           hyperlink: aCreation.hyperlinks
             ? aCreation.hyperlinks.map((aLink) => ({
-                name: aLink.text,
-                url: aLink.link,
-              }))
+              name: aLink.text,
+              url: aLink.link,
+            }))
             : [],
         };
       }),
@@ -201,11 +204,11 @@ Promise.all(
           media:
             aTeam.image && aTeam.image !== ""
               ? [
-                  {
-                    type: "photo",
-                    url: `https://media.artogo.tw${aTeam.image}.jpg`,
-                  },
-                ]
+                {
+                  type: "photo",
+                  url: `https://media.artogo.tw${aTeam.image}.jpg`,
+                },
+              ]
               : [],
           hyperlink: [],
         })),
