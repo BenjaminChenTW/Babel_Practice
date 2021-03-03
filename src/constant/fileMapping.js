@@ -801,7 +801,6 @@ const files = {
         93,
         94,
         95,
-        99,
         102,
         147,
         148,
@@ -821,7 +820,7 @@ const files = {
         1,
         2,
         4,
-        4,
+        2,
         2,
         2,
         5,
@@ -835,7 +834,6 @@ const files = {
         2,
         2,
         4,
-        1,
         1,
         2,
         2,
@@ -855,7 +853,6 @@ const files = {
     website: filesNameCreator('website', 'subzoology'),
     creationIsJson: true,
     hideMenuIdx: [2],
-    hide: true,
   },
 };
 
