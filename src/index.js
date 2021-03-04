@@ -50,7 +50,7 @@ Promise.all(
         files[exhibitionId].teamDescription = [
           {
             image: curator,
-            description: files[exhibitionId].teamDescription
+            description: files[exhibitionId].teamDescription.description
           },
         ];
 
