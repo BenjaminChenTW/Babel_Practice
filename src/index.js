@@ -101,8 +101,8 @@ Promise.all(
           url: `https://media.artogo.tw${aMedia}.jpg`,
         }));
       let formatted_artist = {
-        name: "name",
-        description: anArtist.description,
+        name: "TEST",
+        description: anArtist.description.trim(),
         upper_title: null,
         media,
         hyperlink: [],
@@ -132,7 +132,7 @@ Promise.all(
       intro: {
         full_name: anExhibition.full_name || anExhibition.name,
         duration: `${anExhibition.start_date} ~ ${anExhibition.end_date}`,
-        open_hour: "open_hour",
+        open_hour: "TEST",
         venue: anExhibition.venues
           .map(
             (aVenue) => aVenue.name + (aVenue.space ? `｜${aVenue.space}` : "")
@@ -171,9 +171,9 @@ Promise.all(
         return {
           id: genID(),
           index: index + 1,
-          title: aCreation.title,
-          creator: aCreation.creator,
-          description: aCreation.description,
+          title: aCreation.title ? aCreation.title.replace("\n", " ") : "",
+          creator: aCreation.creator || "",
+          description: aCreation.description ? aCreation.description.trim() : "",
           media_thumb,
           media,
           sound: aCreation.audio
@@ -198,8 +198,8 @@ Promise.all(
       about: {
         artist,
         curator: anExhibition.teamDescription.map((aTeam) => ({
-          name: "name",
-          description: aTeam.description,
+          name: "TEST",
+          description: aTeam.description.trim(),
           upper_title: null,
           media:
             aTeam.image && aTeam.image !== ""
