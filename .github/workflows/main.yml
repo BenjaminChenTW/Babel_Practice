@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: google-github-actions/upload-cloud-storage@main
+        with:
+          path: ./
+          destination: ${{secrets.BUCKET_NAME}}
+          credentials: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
