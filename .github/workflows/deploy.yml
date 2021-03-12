@@ -16,4 +16,4 @@ jobs:
           destination: ${{secrets.BUCKET_NAME}}
           credentials: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
       - run: |
-          ls /
+          find home/
